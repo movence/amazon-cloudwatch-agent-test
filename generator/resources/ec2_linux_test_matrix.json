@@ -1,13 +1,13 @@
 [
   {
-    "os": "ubuntu-20.04",
-    "username": "ubuntu",
+    "os": "al2",
+    "username": "ec2-user",
     "instanceType":"t3a.medium",
-    "installAgentCommand": "go run ./install/install_agent.go deb",
-    "ami": "cloudwatch-agent-integration-test-ubuntu*",
-    "caCertPath": "/etc/ssl/certs/ca-certificates.crt",
+    "installAgentCommand": "go run ./install/install_agent.go rpm",
+    "ami": "cloudwatch-agent-integration-test-al2*",
+    "caCertPath": "/etc/ssl/certs/ca-bundle.crt",
     "arc": "amd64",
-    "binaryName": "amazon-cloudwatch-agent.deb",
+    "binaryName": "amazon-cloudwatch-agent.rpm",
     "family": "linux"
   }
 ]
