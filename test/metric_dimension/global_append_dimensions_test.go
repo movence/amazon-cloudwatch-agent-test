@@ -7,7 +7,6 @@ package metric_dimension
 
 import (
 	"log"
-	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 
@@ -46,10 +45,6 @@ func (t *GlobalAppendDimensionsTestRunner) GetAgentConfigFileName() string {
 
 func (t *GlobalAppendDimensionsTestRunner) GetMeasuredMetrics() []string {
 	return []string{"cpu_time_active"}
-}
-
-func (t *GlobalAppendDimensionsTestRunner) GetAgentRunDuration() time.Duration {
-	return 3 * time.Minute
 }
 
 func (t *GlobalAppendDimensionsTestRunner) validateGlobalAppendDimensionMetric(metricName string) status.TestResult {
