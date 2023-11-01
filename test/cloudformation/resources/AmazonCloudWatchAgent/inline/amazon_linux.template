@@ -60,7 +60,7 @@ Resources:
                   "metrics": {
                     "namespace": "${MetricNamespace}",
                     "append_dimensions": {
-                      "InstanceId": "${!aws:InstanceId}"
+                      "InstanceId": "${aws:InstanceId}"
                     },
                     "metrics_collected": {
                       "mem": {
